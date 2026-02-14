@@ -40,19 +40,4 @@ msg['subject'] = 'Top News Stories HN [Aitomated Email]' + ' ' + str(now.day) + 
 msg['from'] = FROM
 msg['To'] = TO
 
-msg.attach(MIMEText(content, 'html'))
 
-print('Initiating Server...')
-
-server = smtplib.SMTP(SERVER, PORT)
-
-server.set_debuglevel(1)
-server.ehlo()
-server.starttls()
-
-server.login(FROM, TO, msg.as_string())
-server.sendmail(FROM, TO, msg.as_string())
-
-print('Email Sent')
-
-Server.quit()# extracting-hacker-news
