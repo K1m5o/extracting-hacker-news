@@ -21,7 +21,8 @@ def extract_news(url):
 
         retrun(cnt)
 
-
+cnt = extract_news('https://news.ycombinator.com/')
+content += cnt
   
 
 
