@@ -18,6 +18,10 @@ def extract_news(url):
     soup = BeautifulSoup(content,'html.parser')
     for i, in enumerate(soup.find_all('td',attrs={'class':'title','valign':''})):
         cnt += ((str(i+1)+ '\n' + '<br>') if tag.txt!='more' else '')
+
+        retrun(cnt)
+
+
   
 
 
