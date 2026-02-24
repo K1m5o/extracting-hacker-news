@@ -31,3 +31,8 @@ content +=('<br><br>End of message')
 
 print('composing email...')
 
+SERVER = 'smtp.gmail.com'
+PORT = 587
+FROM = 'akib.khaliq@gmail.com'
+TO = 'akib.khaliq@gmail.com' 
+PASS = ''
