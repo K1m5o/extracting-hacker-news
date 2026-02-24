@@ -29,4 +29,5 @@ content += cnt
 content += ('<br>------<br>')
 content +=('<br><br>End of message')
 
+print('composing email...')
 
