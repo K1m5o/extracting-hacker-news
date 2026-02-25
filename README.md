@@ -36,3 +36,8 @@ PORT = 587
 FROM = 'akib.khaliq@gmail.com'
 TO = 'akib.khaliq@gmail.com' 
 PASS = ''
+
+
+msg = MIMEMultipart()
+
+
