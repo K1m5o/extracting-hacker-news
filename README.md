@@ -40,3 +40,9 @@ msg = MIMEMultipart()
 msg['subject'] = 'Top News Stories HN [Aitomated Email]' + ' ' + str(now.day) + str(now.month) + '-' + str(now.year)
 msg['from'] = FROM
 msg['To'] = TO
+
+msg.attach(MIMEText(content, 'html'))
+
+
+
+
