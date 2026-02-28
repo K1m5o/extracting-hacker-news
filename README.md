@@ -44,5 +44,6 @@ msg.attach(MIMEText(content, 'html'))
 
 print('Initiating Server...')
 
+server = smtplib.SMTP(SERVER, PORT)
 
 
