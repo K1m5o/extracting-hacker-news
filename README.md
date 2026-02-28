@@ -49,3 +49,7 @@ server = smtplib.SMTP(SERVER, PORT)
 server.set_debuglevel(1)
 server.ehlo()
 server.starttls()
+
+server.login(FROM, TO, msg.as_string())
+server.sendmail(FROM, TO, msg.as_string())
+
