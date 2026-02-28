@@ -46,4 +46,6 @@ print('Initiating Server...')
 
 server = smtplib.SMTP(SERVER, PORT)
 
-
+server.set_debuglevel(1)
+server.ehlo()
+server.starttls()
